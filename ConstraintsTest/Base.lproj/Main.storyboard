@@ -16,31 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TKz-R0-5kG">
-                                <rect key="frame" x="5" y="64" width="383" height="749"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AES-Qa-0OA">
+                                <rect key="frame" x="136.66666666666666" y="79" width="119.99999999999997" height="400"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbQ-9k-mBR">
-                                        <rect key="frame" x="0.0" y="0.0" width="383" height="364.66666666666669"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLP-nW-QZm">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="4p8-fx-M6D"/>
+                                            <constraint firstAttribute="width" constant="120" id="kfQ-kL-de8"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irD-tC-olQ">
-                                        <rect key="frame" x="0.0" y="384.66666666666674" width="383" height="364.33333333333326"/>
-                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVY-ZA-9ic">
+                                        <rect key="frame" x="0.0" y="140" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Neo-gY-OLn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyw-Sg-Z2S">
+                                        <rect key="frame" x="0.0" y="280" width="120" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="woZ-9b-2JW"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="lbQ-9k-mBR" firstAttribute="top" secondItem="TKz-R0-5kG" secondAttribute="top" id="I3t-ws-AH5"/>
-                                    <constraint firstItem="lbQ-9k-mBR" firstAttribute="leading" secondItem="TKz-R0-5kG" secondAttribute="leading" id="axw-06-gRD"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-a0-PlA">
+                                <rect key="frame" x="86.666666666666686" y="635" width="220" height="60"/>
+                                <color key="backgroundColor" red="0.43739967740000002" green="0.38501592579999999" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IZA-DN-mAs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="m9p-og-LeX"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TKz-R0-5kG" secondAttribute="bottom" constant="5" id="ABt-kO-aSy"/>
-                            <constraint firstItem="TKz-R0-5kG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="VjC-HL-0ed"/>
-                            <constraint firstItem="TKz-R0-5kG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Yly-Ga-WNj"/>
-                            <constraint firstItem="TKz-R0-5kG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEE-wc-Ylk"/>
+                            <constraint firstItem="RCw-a0-PlA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jn8-fR-eC3"/>
+                            <constraint firstItem="AES-Qa-0OA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRA-KS-vw0"/>
+                            <constraint firstItem="AES-Qa-0OA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="scz-E8-Ff5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RCw-a0-PlA" secondAttribute="bottom" constant="123" id="wuW-R1-ZU2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -50,14 +74,20 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
