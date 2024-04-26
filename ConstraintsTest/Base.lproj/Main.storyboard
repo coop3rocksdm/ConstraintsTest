@@ -43,7 +43,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-a0-PlA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-a0-PlA">
                                 <rect key="frame" x="86.666666666666686" y="635" width="220" height="60"/>
                                 <color key="backgroundColor" red="0.43739967740000002" green="0.38501592579999999" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -53,9 +53,10 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Title"/>
+                                <connections>
+                                    <action selector="toggleLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="UnI-5D-Lar"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +68,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RCw-a0-PlA" secondAttribute="bottom" constant="123" id="wuW-R1-ZU2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="xyw-Sg-Z2S" id="2bD-Pm-oSG"/>
+                        <outlet property="redLight" destination="QLP-nW-QZm" id="222-a3-QVf"/>
+                        <outlet property="switchButton" destination="RCw-a0-PlA" id="1V6-Md-e6v"/>
+                        <outlet property="yellowLight" destination="pVY-ZA-9ic" id="dVN-nu-UfD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
